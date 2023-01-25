@@ -1,0 +1,24 @@
+{
+  "name": "plugin-template",
+  "version": "1.0.0",
+  "description": "Nubo Template",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc && rm -rf dist/assets && cp -a src/assets dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nubo <support@nubosoftware.com>",
+  "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.17",
+    "nubo-plugin-api": "^1.0.9"
+  }
+}
